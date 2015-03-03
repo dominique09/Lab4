@@ -11,3 +11,16 @@ T TrouverMax(T tab[], int _nbElement)
 
 	return max;
 }
+
+template <typename T>
+T CalculerSomme(T tab[], int _nbElement)
+{
+	T somme = T();
+
+	for (int i = 0; i < _nbElement; i++)
+	{
+		somme += tab[i];
+	}
+
+	return somme;
+}
