@@ -20,20 +20,20 @@ namespace fonctionsModelesTests
 			Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabFloat, 5));
 		}
 
-		//TEST_METHOD(TrouverMax_DansUnTableauDeInt_DevraitRetournerLeMaximum)
-		//{
-		//	const int MAX_ATTENDU = 34;
-		//	int tabInt[5] = { 9, 2, 4, MAX_ATTENDU, -1 };
+		TEST_METHOD(TrouverMax_DansUnTableauDeInt_DevraitRetournerLeMaximum)
+		{
+			const int MAX_ATTENDU = 34;
+			int tabInt[5] = { 9, 2, 4, MAX_ATTENDU, -1 };
 
-		//	Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabInt, 5));
-		//}
+			Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabInt, 5));
+		}
 
-		//TEST_METHOD(TrouverMax_DansUnTableauDeString_DevraitRetournerLeMaximumSelonLordreAlphabetique)
-		//{
-		//	const string MAX_ATTENDU = "Trois";
-		//	string tabString[5] = { "Huit", "Cinq", "Deux", MAX_ATTENDU, "Quatre" };
+		TEST_METHOD(TrouverMax_DansUnTableauDeString_DevraitRetournerLeMaximumSelonLordreAlphabetique)
+		{
+			const string MAX_ATTENDU = "Trois";
+			string tabString[5] = { "Huit", "Cinq", "Deux", MAX_ATTENDU, "Quatre" };
 
-		//	Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabString, 5));
-		//}
+			Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabString, 5));
+		}
 	};
 }
