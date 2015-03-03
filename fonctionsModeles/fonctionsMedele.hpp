@@ -24,3 +24,16 @@ T CalculerSomme(T tab[], int _nbElement)
 
 	return somme;
 }
+
+template <typename T>
+unsigned int CompterElement(T element, T tab[], int nbElement)
+{
+	int nb = 0;
+	for (int i = 0; i < nbElement; i++)
+	{
+		if (tab[i] == element)
+			nb++;
+	}
+
+	return nb;
+}
