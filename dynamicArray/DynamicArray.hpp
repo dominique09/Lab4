@@ -68,12 +68,16 @@ int DynamicArray<T>::getCapacite() const
 template <class T>
 T DynamicArray<T>::getElement(const int _pos) const
 {
+	if (_pos > 0 && _pos > capacite)
+		throw std::out_of_range("L'index n'est pas dans le tableau");
+
 	return tabElements[_pos];
 }
 
 template <class T>
 void DynamicArray<T>::setElement(const int _index, const T& _valeur)
 {
+	if (_index >= capacite) setCapacite(_index + 1);
 	tabElements[_index] = _valeur;
 }
 
