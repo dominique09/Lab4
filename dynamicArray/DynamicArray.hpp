@@ -12,7 +12,14 @@ int DynamicArray<T>::getCapacite() const
 }
 
 template <class T>
-T DynamicArray<T>::getElement(int _pos) const
+T DynamicArray<T>::getElement(const int _pos) const
 {
 	return tabElements[_pos];
 }
+
+template <class T>
+void DynamicArray<T>::setElement(const int _index, const T& _valeur)
+{
+	tabElements[_index] = _valeur;
+}
+
