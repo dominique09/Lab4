@@ -8,6 +8,8 @@ DynamicArray<T>::DynamicArray()
 template <class T>
 DynamicArray<T>::DynamicArray(int _capacite)
 {
+	if (_capacite < 1) throw std::invalid_argument("Le tableau ne peut pas être vide");
+
 	capacite = _capacite;
 	tabElements = new T[_capacite];
 
