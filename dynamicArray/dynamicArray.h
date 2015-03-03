@@ -7,7 +7,9 @@ class DynamicArray
 public:
 	DynamicArray();
 	int getCapacite() const;
+	T getElement(int _pos) const;
 private:
+	T * tabElements;
 	int capacite;
 };
 

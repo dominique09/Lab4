@@ -22,17 +22,17 @@ namespace DynamicArrayTests
 			Assert::AreEqual(CAPACITE_DEFAUT, capacite);
 		}
 
-		//TEST_METHOD(la_valeur_par_defaut_des_elements_d_un_dyanmicArray_est_0)
-		//{
-		//	//Action
-		//	DynamicArray<string> tableau;
+		TEST_METHOD(la_valeur_par_defaut_des_elements_d_un_dyanmicArray_est_0)
+		{
+			//Action
+			DynamicArray<string> tableau;
 
-		//	//Assert
-		//	for (int i = 0; i < tableau.getCapacite(); i++)
-		//	{
-		//		Assert::AreEqual(string(""), tableau.getElement(i));
-		//	}
-		//}
+			//Assert
+			for (int i = 0; i < tableau.getCapacite(); i++)
+			{
+				Assert::AreEqual(string(""), tableau.getElement(i));
+			}
+		}
 
 
 		//TEST_METHOD(setElement_devrait_initialiser_un_element_du_dynamicArray)
